@@ -145,6 +145,34 @@ button {
   cursor: pointer;
 }
 
+button:focus, button:active, button:hover {
+  background-color: var(--Green-700);
+  transition: background-color 0.3s;
+}
+
 button::before {
   content: url(./images/icon-cart.svg);
+}
+
+@media screen and (min-width: 675px) {
+  body {
+    display: grid;
+    place-content: center;
+    min-block-size: 100vh;
+  }
+  .container {
+    grid-template-columns: 1fr 1fr;
+    max-width: 40em;
+  }
+  img {
+    border-radius: 1rem 0 0 1rem;
+    block-size: 100%;
+  }
+  main {
+    padding: 2.25rem 2.5rem 2.5rem 2.5rem;
+    line-height: 1.75;
+  }
+  button {
+    padding: 0.25rem 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
