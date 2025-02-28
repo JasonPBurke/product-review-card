@@ -1,0 +1,132 @@
+:root
+  --Green-500: hsl(158, 36%, 37%)
+  --Green-700: hsl(158, 42%, 18%)
+  --Black: hsl(212, 21%, 14%)
+  --Grey: hsl(228, 12%, 48%)
+  --Cream: hsl(30, 38%, 92%)
+  --White: hsl(0, 0%, 100%)
+
+
+.montserrat-500
+  font-family: "Montserrat", sans-serif
+  font-optical-sizing: auto
+  font-weight: 500
+  font-style: normal
+
+
+.montserrat-700
+  font-family: "Montserrat", sans-serif
+  font-optical-sizing: auto
+  font-weight: 700
+  font-style: normal
+
+
+.fraunces-700
+  font-family: "Fraunces", serif
+  font-optical-sizing: auto
+  font-weight: 700
+  font-style: normal
+  
+*,
+*::before,
+*::after 
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd 
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Roboto', sans-serif
+  font-size: 16px
+  line-height: 1.5
+  color: #333
+
+a 
+  text-decoration: none
+  color: inherit
+
+ul, ol
+  list-style: none
+
+input, textarea, select, button
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+  border: none
+  outline: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+  
+img
+  max-inline-size: 100%
+  block-size: auto
+  border-radius: 1rem 1rem 0 0
+
+p
+  font-size: 14px
+  color: var(--Grey)
+
+body
+  background-color: var(--Cream)
+  color: var(--Black)
+  font-size: 1rem
+  line-height: 1.5
+
+.container
+  display: grid
+  background-color: var(--White)
+  border-radius: 1rem
+  margin: 2rem 1rem
+
+
+main
+  display: grid
+  padding: .75rem 1.25rem 1.25rem 1.25rem
+
+.card-category
+  letter-spacing: 0.25em
+  text-transform: uppercase
+  transform: scaley(.95)
+  margin-bottom: .5rem
+
+.card-title
+  line-height: 1
+  margin-bottom: 1rem
+
+.card-description
+  margin-bottom: 1rem
+
+.price
+  display: flex
+  justify-content: start
+  align-items: center
+  gap: 1rem
+  margin-bottom: 1rem
+
+.price > p:first-child
+  color: var(--Green-500)
+  font-size: 2rem
+
+.price > p:last-child
+  text-decoration: line-through
+
+button
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: .5rem
+  background-color: var(--Green-500)
+  color: var(--White)
+  padding: 1rem
+  border-radius: .5rem
+  cursor: pointer
+
+
+button::before
+  content: url(./images/icon-cart.svg)
+  
